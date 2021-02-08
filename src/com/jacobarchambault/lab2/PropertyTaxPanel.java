@@ -22,7 +22,7 @@ public class PropertyTaxPanel extends JPanel {
 	 * Constructor
 	 */
 	public PropertyTaxPanel() {
-		// Create a label prompting the user and a text field.
+		// Create a text field.
 		propertyValue = new JTextField(10);
 		// Create a GridLayout manager.
 		setLayout(new GridLayout(1, 2));
@@ -36,7 +36,7 @@ public class PropertyTaxPanel extends JPanel {
 		double assessmentValue = Double.parseDouble(propertyValue.getText()) * .6;
 		// Get the property tax.
 		double propertyTax = assessmentValue * .0064;
-		// Display the message.
+		// Display them.
 		JOptionPane.showMessageDialog(null, String.format("Assessment Value: $%,.2f\nProperty tax: $%,.2f", assessmentValue, propertyTax));
 	}
 }

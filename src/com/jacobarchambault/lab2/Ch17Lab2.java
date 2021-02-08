@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
@@ -30,20 +29,6 @@ public class Ch17Lab2 extends JFrame {
 		}
 	} // End of inner class
 
-	/**
-	 * ExitButtonListener is an action listener class for the exitButton component.
-	 */
-	private class ExitButtonListener implements ActionListener {
-		/**
-		 * actionPerformed method
-		 * 
-		 * @param e An ActionEvent object.
-		 */
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			System.exit(0);
-		}
-	} // End of inner class
 
 	/**
 	 * 
@@ -57,8 +42,6 @@ public class Ch17Lab2 extends JFrame {
 
 	private JPanel buttonPanel; // A panel for the buttons
 	private JButton calcButton; // Calculates everything
-
-	private JButton exitButton; // Exits the application
 
 	private PropertyTaxPanel propertyTaxPanel; // A panel for minutes
 
@@ -91,14 +74,9 @@ public class Ch17Lab2 extends JFrame {
 		calcButton = new JButton("Calculate Property tax");
 		// Add an action listener to the button.
 		calcButton.addActionListener(new CalcButtonListener());
-		// Create a button to exit the application.
-		exitButton = new JButton("Exit");
-		// Add an action listener to the button.
-		exitButton.addActionListener(new ExitButtonListener());
 		// Put the buttons in their own panel.
 		buttonPanel = new JPanel();
 		buttonPanel.add(calcButton);
-		buttonPanel.add(exitButton);
 	}
 
 }
