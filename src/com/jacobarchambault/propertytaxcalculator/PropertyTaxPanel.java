@@ -7,10 +7,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-/**
- * The MinutesPanel class for use with the Long Distance Calls programming
- * challenge.
- */
 public class PropertyTaxPanel extends JPanel {
 	/**
 	 * 
