@@ -76,7 +76,7 @@ public class Ch17Lab2 extends JFrame {
 	 */
 	public Ch17Lab2() {
 		// Display a title.
-		setTitle("Long Distance Charges");
+		setTitle("Property taxes");
 		// Specify what happens when the close button is clicked.
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		// Create a RatePanel object.
