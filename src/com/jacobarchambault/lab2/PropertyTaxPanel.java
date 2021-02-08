@@ -10,7 +10,7 @@ import javax.swing.JTextField;
  * The MinutesPanel class for use with the Long Distance Calls programming
  * challenge.
  */
-public class MinutesPanel extends JPanel {
+public class PropertyTaxPanel extends JPanel {
 	/**
 	 * 
 	 */
@@ -20,7 +20,7 @@ public class MinutesPanel extends JPanel {
 	/**
 	 * Constructor
 	 */
-	public MinutesPanel() {
+	public PropertyTaxPanel() {
 		// Create a label prompting the user and a text field.
 		propertyValue = new JTextField(10);
 		// Create a GridLayout manager.

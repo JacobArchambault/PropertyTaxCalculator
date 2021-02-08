@@ -31,7 +31,7 @@ public class Ch17Lab2 extends JFrame {
 			// Get the applicable rate.
 			rate = ratePanel.getRate();
 			// Get the total charges
-			assessmentValue = minutesPanel.getCharges(rate);
+			assessmentValue = propertyTaxPanel.getCharges(rate);
 			// Display the message.
 			JOptionPane.showMessageDialog(null, String.format("Assessment Value: $%,.2f\nProperty tax: 0", assessmentValue));
 		}
@@ -67,7 +67,7 @@ public class Ch17Lab2 extends JFrame {
 
 	private JButton exitButton; // Exits the application
 
-	private MinutesPanel minutesPanel; // A panel for minutes
+	private PropertyTaxPanel propertyTaxPanel; // A panel for minutes
 
 	private RatePanel ratePanel; // A panel for rates
 
@@ -82,12 +82,12 @@ public class Ch17Lab2 extends JFrame {
 		// Create a RatePanel object.
 		ratePanel = new RatePanel();
 		// Create a MinutesPanel object.
-		minutesPanel = new MinutesPanel();
+		propertyTaxPanel = new PropertyTaxPanel();
 		// Build the panel that contains the buttons.
 		buildButtonPanel();
 		// Add the panels to the content pane.
 		add(ratePanel, BorderLayout.NORTH);
-		add(minutesPanel, BorderLayout.CENTER);
+		add(propertyTaxPanel, BorderLayout.CENTER);
 		add(buttonPanel, BorderLayout.SOUTH);
 		// Pack and display the window.
 		pack();
