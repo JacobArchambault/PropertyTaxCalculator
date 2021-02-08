@@ -2,7 +2,6 @@ package com.jacobarchambault.lab2;
 
 import java.awt.GridLayout;
 
-import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -16,19 +15,19 @@ public class MinutesPanel extends JPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private JTextField minutes; // To get minutes
+	private JTextField propertyValue; // To get minutes
 
 	/**
 	 * Constructor
 	 */
 	public MinutesPanel() {
 		// Create a label prompting the user and a text field.
-		minutes = new JTextField(10);
+		propertyValue = new JTextField(10);
 		// Create a GridLayout manager.
 		setLayout(new GridLayout(1, 2));
 		// Add the labels and text fields to this panel.
 		add(new JLabel("Enter the actual property value:"));
-		add(minutes);
+		add(propertyValue);
 	}
 
 	/**
@@ -39,7 +38,7 @@ public class MinutesPanel extends JPanel {
 	 * @return The charges for the number of minutes used.
 	 */
 	public double getCharges(double rate) {
-		double charges = Double.parseDouble(minutes.getText()) * rate;
+		double charges = Double.parseDouble(propertyValue.getText()) * rate;
 		return charges;
 	}
 }
