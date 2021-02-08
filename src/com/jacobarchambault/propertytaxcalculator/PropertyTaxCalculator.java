@@ -38,10 +38,8 @@ public class PropertyTaxCalculator extends JFrame {
 	/**
 	 * Constructor
 	 */
-	public PropertyTaxCalculator() {
-		// Display a title.
-		setTitle(
-				"Property taxes");
+	public PropertyTaxCalculator(String title) {
+		super(title);
 		// Specify what happens when the close button is clicked.
 		setDefaultCloseOperation(
 				WindowConstants.EXIT_ON_CLOSE);
