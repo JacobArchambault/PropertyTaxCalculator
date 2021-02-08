@@ -99,7 +99,7 @@ public class Ch17Lab2 extends JFrame {
 	 */
 	private void buildButtonPanel() {
 		// Create a button to calculate the charges.
-		calcButton = new JButton("Calculate Charges");
+		calcButton = new JButton("Calculate Property tax");
 		// Add an action listener to the button.
 		calcButton.addActionListener(new CalcButtonListener());
 		// Create a button to exit the application.
