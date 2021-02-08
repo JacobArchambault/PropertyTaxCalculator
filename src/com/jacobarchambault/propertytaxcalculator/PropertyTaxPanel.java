@@ -1,4 +1,4 @@
-package com.jacobarchambault.lab2;
+package com.jacobarchambault.propertytaxcalculator;
 
 import java.awt.GridLayout;
 
