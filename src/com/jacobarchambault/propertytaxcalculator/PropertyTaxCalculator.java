@@ -33,7 +33,7 @@ public class PropertyTaxCalculator extends JFrame {
 
 
 
-	private PropertyTaxPanel propertyTaxPanel; // A panel for minutes
+	private PropertyTaxPanel propertyTaxPanel; // A panel for displaying assessmentValue and tax
 
 	/**
 	 * Constructor
@@ -45,7 +45,7 @@ public class PropertyTaxCalculator extends JFrame {
 				WindowConstants.EXIT_ON_CLOSE);
 		// Create a PropertyTaxPanel object.
 		propertyTaxPanel = new PropertyTaxPanel();
-		// Build the panel that contains the buttons.
+		// Build the panel that contains the button.
 		buildButtonPanel();
 		// Add the panels to the content pane.
 		add(

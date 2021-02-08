@@ -16,7 +16,7 @@ public class PropertyTaxPanel extends JPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private JTextField propertyValue; // To get minutes
+	private JTextField propertyValue; // To get property value
 
 	/**
 	 * Constructor
