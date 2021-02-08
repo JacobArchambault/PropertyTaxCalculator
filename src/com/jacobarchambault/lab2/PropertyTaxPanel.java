@@ -37,7 +37,7 @@ public class PropertyTaxPanel extends JPanel {
 	 * @param rate The per-minute rate.
 	 * @return The charges for the number of minutes used.
 	 */
-	public double getCharges(double rate) {
+	public double getCharges() {
 		double charges = Double.parseDouble(propertyValue.getText()) * .6;
 		return charges;
 	}
