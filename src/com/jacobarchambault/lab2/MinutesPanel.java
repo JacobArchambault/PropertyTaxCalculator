@@ -23,14 +23,11 @@ public class MinutesPanel extends JPanel {
 	 */
 	public MinutesPanel() {
 		// Create a label prompting the user and a text field.
-		JLabel minutesMsg = new JLabel("Minutes:");
 		minutes = new JTextField(10);
 		// Create a GridLayout manager.
 		setLayout(new GridLayout(1, 2));
-		// Create a border.
-		setBorder(BorderFactory.createTitledBorder("Time of Call"));
 		// Add the labels and text fields to this panel.
-		add(minutesMsg);
+		add(new JLabel("Enter the actual property value:"));
 		add(minutes);
 	}
 
