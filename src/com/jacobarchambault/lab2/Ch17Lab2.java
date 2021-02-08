@@ -27,13 +27,13 @@ public class Ch17Lab2 extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			double rate; // Applicable rate
-			double totalCharges; // Total charges
+			double assessmentValue; 
 			// Get the applicable rate.
 			rate = ratePanel.getRate();
 			// Get the total charges
-			totalCharges = minutesPanel.getCharges(rate);
+			assessmentValue = minutesPanel.getCharges(rate);
 			// Display the message.
-			JOptionPane.showMessageDialog(null, String.format("Total Charges: $%,.2f", totalCharges));
+			JOptionPane.showMessageDialog(null, String.format("Assessment Value: $%,.2f\nProperty tax: 0", assessmentValue));
 		}
 	} // End of inner class
 

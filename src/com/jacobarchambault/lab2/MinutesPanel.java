@@ -38,7 +38,7 @@ public class MinutesPanel extends JPanel {
 	 * @return The charges for the number of minutes used.
 	 */
 	public double getCharges(double rate) {
-		double charges = Double.parseDouble(propertyValue.getText()) * rate;
+		double charges = Double.parseDouble(propertyValue.getText()) * .6;
 		return charges;
 	}
 }
