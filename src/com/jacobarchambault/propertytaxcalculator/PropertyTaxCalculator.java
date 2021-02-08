@@ -32,7 +32,6 @@ public class PropertyTaxCalculator extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 
-	private JPanel buttonPanel; // A panel for the buttons
 
 	private PropertyTaxPanel propertyTaxPanel; // A panel for minutes
 
@@ -54,9 +53,6 @@ public class PropertyTaxCalculator extends JFrame {
 		add(
 				propertyTaxPanel,
 				BorderLayout.CENTER);
-		add(
-				buttonPanel,
-				BorderLayout.SOUTH);
 		// Pack and display the window.
 		pack();
 		setVisible(
@@ -64,7 +60,7 @@ public class PropertyTaxCalculator extends JFrame {
 	}
 
 	/**
-	 * The buildButtonPanel method creates a panel containing buttons.
+	 * The buildButtonPanel method creates a panel containing the calc property tax button.
 	 */
 	private void buildButtonPanel() {
 		// Create a button to calculate the property tax.
@@ -74,9 +70,13 @@ public class PropertyTaxCalculator extends JFrame {
 		calcButton.addActionListener(
 				new CalcButtonListener());
 		// Put the button in its own panel.
-		buttonPanel = new JPanel();
+		JPanel buttonPanel = new JPanel();
 		buttonPanel.add(
 				calcButton);
+		add(
+				buttonPanel,
+				BorderLayout.SOUTH);
+
 	}
 
 }
