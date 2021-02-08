@@ -9,11 +9,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
-/**
- * This program demonstrates a solution to the Long Distance Calls programming
- * challenge.
- */
-public class Ch17Lab2 extends JFrame {
+public class PropertyTaxCalculator extends JFrame {
 	/**
 	 * CalcButtonListener is an action listener class for the calcButton component.
 	 */
@@ -36,7 +32,7 @@ public class Ch17Lab2 extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	public static void main(String[] args) {
-		new Ch17Lab2();
+		new PropertyTaxCalculator();
 
 	}
 
@@ -49,7 +45,7 @@ public class Ch17Lab2 extends JFrame {
 	/**
 	 * Constructor
 	 */
-	public Ch17Lab2() {
+	public PropertyTaxCalculator() {
 		// Display a title.
 		setTitle("Property taxes");
 		// Specify what happens when the close button is clicked.
