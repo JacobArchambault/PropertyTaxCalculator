@@ -3,6 +3,7 @@ package com.jacobarchambault.lab2;
 import java.awt.GridLayout;
 
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -30,15 +31,12 @@ public class PropertyTaxPanel extends JPanel {
 		add(propertyValue);
 	}
 
-	/**
-	 * The getCharges method uses the specified rate to calculate the charges for
-	 * the number of minutes entered.
-	 * 
-	 * @param rate The per-minute rate.
-	 * @return The charges for the number of minutes used.
-	 */
-	public double getCharges() {
-		double charges = Double.parseDouble(propertyValue.getText()) * .6;
-		return charges;
+	public void showPropertyTax() {
+		// Get the assessmentValue.
+		double assessmentValue = Double.parseDouble(propertyValue.getText()) * .6;
+		// Get the property tax.
+		double propertyTax = assessmentValue * .0064;
+		// Display the message.
+		JOptionPane.showMessageDialog(null, String.format("Assessment Value: $%,.2f\nProperty tax: $%,.2f", assessmentValue, propertyTax));
 	}
 }

@@ -26,13 +26,7 @@ public class Ch17Lab2 extends JFrame {
 		 */
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			double assessmentValue; 
-			// Get the applicable rate.
-			// Get the total charges
-			assessmentValue = propertyTaxPanel.getCharges();
-			double propertyTax = assessmentValue * .0064;
-			// Display the message.
-			JOptionPane.showMessageDialog(null, String.format("Assessment Value: $%,.2f\nProperty tax: $%,.2f", assessmentValue, propertyTax));
+			propertyTaxPanel.showPropertyTax();
 		}
 	} // End of inner class
 
