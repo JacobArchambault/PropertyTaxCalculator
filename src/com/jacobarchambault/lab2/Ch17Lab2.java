@@ -68,7 +68,6 @@ public class Ch17Lab2 extends JFrame {
 
 	private PropertyTaxPanel propertyTaxPanel; // A panel for minutes
 
-	private RatePanel ratePanel; // A panel for rates
 
 	/**
 	 * Constructor
@@ -78,14 +77,11 @@ public class Ch17Lab2 extends JFrame {
 		setTitle("Property taxes");
 		// Specify what happens when the close button is clicked.
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-		// Create a RatePanel object.
-		ratePanel = new RatePanel();
 		// Create a MinutesPanel object.
 		propertyTaxPanel = new PropertyTaxPanel();
 		// Build the panel that contains the buttons.
 		buildButtonPanel();
 		// Add the panels to the content pane.
-		add(ratePanel, BorderLayout.NORTH);
 		add(propertyTaxPanel, BorderLayout.CENTER);
 		add(buttonPanel, BorderLayout.SOUTH);
 		// Pack and display the window.
