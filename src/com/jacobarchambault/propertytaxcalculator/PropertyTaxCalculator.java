@@ -26,8 +26,6 @@ public class PropertyTaxCalculator extends JFrame {
 				WindowConstants.EXIT_ON_CLOSE);
 		// Create a PropertyTaxPanel object.
 		propertyTaxPanel = new PropertyTaxPanel();
-		// Build the panel that contains the button.
-		buildButtonPanel();
 		// Add the panels to the content pane.
 		add(
 				propertyTaxPanel,
@@ -37,26 +35,4 @@ public class PropertyTaxCalculator extends JFrame {
 		setVisible(
 				true);
 	}
-
-	/**
-	 * The buildButtonPanel method creates a panel containing the calc property tax
-	 * button.
-	 */
-	private void buildButtonPanel() {
-		// Create a button to calculate the property tax.
-		JButton calcButton = new JButton(
-				"Calculate Property tax");
-		// Add an action listener to the button.
-		calcButton.addActionListener(
-				e -> propertyTaxPanel.showPropertyTax());
-		// Put the button in its own panel.
-		JPanel buttonPanel = new JPanel();
-		buttonPanel.add(
-				calcButton);
-		add(
-				buttonPanel,
-				BorderLayout.SOUTH);
-
-	}
-
 }

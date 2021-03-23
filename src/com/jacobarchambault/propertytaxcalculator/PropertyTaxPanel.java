@@ -1,7 +1,9 @@
 package com.jacobarchambault.propertytaxcalculator;
 
+import java.awt.BorderLayout;
 import java.awt.GridLayout;
 
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -24,7 +26,7 @@ public class PropertyTaxPanel extends JPanel {
 		// Create a GridLayout manager.
 		setLayout(
 				new GridLayout(
-						1,
+						2,
 						2));
 		// Add the labels and text fields to this panel.
 		add(
@@ -32,6 +34,7 @@ public class PropertyTaxPanel extends JPanel {
 						"Enter the actual property value:"));
 		add(
 				propertyValue);
+		buildButtonPanel();
 	}
 
 	public void showPropertyTax() {
@@ -48,4 +51,21 @@ public class PropertyTaxPanel extends JPanel {
 						assessmentValue,
 						propertyTax));
 	}
+	/**
+	 * The buildButtonPanel method creates a panel containing the calc property tax
+	 * button.
+	 */
+	private void buildButtonPanel() {
+		// Create a button to calculate the property tax.
+		JButton calcButton = new JButton(
+				"Calculate Property tax");
+		// Add an action listener to the button.
+		calcButton.addActionListener(
+				e -> showPropertyTax());
+		// Put the button in its own panel.
+		add(
+				calcButton, BorderLayout.CENTER);
+
+	}
+
 }
