@@ -10,36 +10,17 @@ import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 
 public class PropertyTaxCalculator extends JFrame {
-	/**
-	 * CalcButtonListener is an action listener class for the calcButton component.
-	 */
-	private class CalcButtonListener implements ActionListener {
-		/**
-		 * actionPerformed method
-		 * 
-		 * @param e An ActionEvent object.
-		 */
-		@Override
-		public void actionPerformed(
-				ActionEvent e) {
-			propertyTaxPanel.showPropertyTax();
-		}
-	} // End of inner class
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
-
-
 
 	private PropertyTaxPanel propertyTaxPanel; // A panel for displaying assessmentValue and tax
 
 	/**
 	 * Constructor
 	 */
-	public PropertyTaxCalculator(String title) {
-		super(title);
+	public PropertyTaxCalculator(
+			String title) {
+		super(
+				title);
 		// Specify what happens when the close button is clicked.
 		setDefaultCloseOperation(
 				WindowConstants.EXIT_ON_CLOSE);
@@ -58,7 +39,8 @@ public class PropertyTaxCalculator extends JFrame {
 	}
 
 	/**
-	 * The buildButtonPanel method creates a panel containing the calc property tax button.
+	 * The buildButtonPanel method creates a panel containing the calc property tax
+	 * button.
 	 */
 	private void buildButtonPanel() {
 		// Create a button to calculate the property tax.
@@ -66,7 +48,7 @@ public class PropertyTaxCalculator extends JFrame {
 				"Calculate Property tax");
 		// Add an action listener to the button.
 		calcButton.addActionListener(
-				new CalcButtonListener());
+				e -> propertyTaxPanel.showPropertyTax());
 		// Put the button in its own panel.
 		JPanel buttonPanel = new JPanel();
 		buttonPanel.add(

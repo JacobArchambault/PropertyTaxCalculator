@@ -3,6 +3,7 @@ package com.jacobarchambault.propertytaxcalculator;
 public class Program {
 	public static void main(
 			String[] args) {
-		new PropertyTaxCalculator("Property taxes");
+		new PropertyTaxCalculator(
+				"Property taxes");
 	}
 }
